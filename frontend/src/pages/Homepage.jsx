@@ -164,21 +164,24 @@ export default function VividCollectionsHomepage() {
   const heroSlides = [
     {
       image:
-        "https://images.pexels.com/photos/8766215/pexels-photo-8766215.jpeg",
-      title: "Where Dreams Begin",
-      subtitle: "Handcrafted engagement rings that tell your unique love story",
-      accent: "NEW COLLECTION",
-    },
-    {
-      image:
-        "https://images.pexels.com/photos/10160119/pexels-photo-10160119.jpeg",
-      title: "Brilliance Reimagined",
-      subtitle: "Lab-grown diamonds with conscious luxury",
-      accent: "SUSTAINABLE CHOICE",
-    },
-    {
-      image:
-        "https://images.pexels.com/photos/13307186/pexels-photo-13307186.jpeg",
+        // "https://images.pexels.com/photos/8766215/pexels-photo-8766215.jpeg",
+        "https://images.pexels.com/photos/3244413/pexels-photo-3244413.jpeg",
+        title: "Where Dreams Begin",
+        subtitle: "Handcrafted engagement rings that tell your unique love story",
+        accent: "NEW COLLECTION",
+      },
+      {
+        image:
+        // "https://images.pexels.com/photos/10160119/pexels-photo-10160119.jpeg",
+        "https://images.pexels.com/photos/5362404/pexels-photo-5362404.jpeg",
+        title: "Brilliance Reimagined",
+        subtitle: "Lab-grown diamonds with conscious luxury",
+        accent: "SUSTAINABLE CHOICE",
+      },
+      {
+        image:
+        // "https://images.pexels.com/photos/13307186/pexels-photo-13307186.jpeg",
+        "https://images.pexels.com/photos/20796909/pexels-photo-20796909.jpeg",
       title: "Color Your World",
       subtitle: "Exquisite gemstones in every hue imaginable",
       accent: "VIBRANT COLLECTION",
@@ -193,6 +196,7 @@ export default function VividCollectionsHomepage() {
     );
 
   return (
+
     <div className="bg-zinc-50 text-zinc-900">
       {/* Hero Banner */}
       <section className="relative h-screen overflow-hidden bg-zinc-900">
@@ -208,9 +212,9 @@ export default function VividCollectionsHomepage() {
             <img
               src={heroSlides[currentSlide].image}
               alt={heroSlides[currentSlide].title}
-              className="w-full h-full object-cover opacity-80"
+              className="w-full h-full object-cover "
             />
-            <div className="absolute inset-0 bg-gradient-to-br from-black/60 via-zinc-900/20 to-transparent" />
+            {/* <div className="absolute inset-0 bg-gradient-to-br from-black/60 via-zinc-900/20 to-transparent" /> */}
 
             {/* Content */}
             <div className="absolute inset-0 flex items-center justify-start px-8 md:px-20">
@@ -476,7 +480,7 @@ export default function VividCollectionsHomepage() {
       </section>
 
       {/* Full Width Banner */}
-      <section className="relative h-[75vh] overflow-hidden">
+      <section className="relative h-[50vh] md:h-[75vh] overflow-hidden">
         <motion.div
           initial={{ scale: 1.2 }}
           whileInView={{ scale: 1 }}
@@ -638,7 +642,7 @@ export default function VividCollectionsHomepage() {
                     </p>
                   </div>
                 </div>
-                <h3 className="text-base tracking-wide text-center group-hover:text-rose-600 transition-colors">
+                <h3 className="text-base   tracking-wide text-center group-hover:text-rose-600 transition-colors">
                   {gem.name}
                 </h3>
               </motion.div>
@@ -731,8 +735,6 @@ export default function VividCollectionsHomepage() {
       </section>
 
       {/* Creative Interactive Section */}
- 
-
     <section className="py-12 px-6 bg-stone-100 overflow-hidden">
       <div className="max-w-[1400px] mx-auto">
         {/* Heading */}
@@ -926,6 +928,7 @@ export default function VividCollectionsHomepage() {
           </motion.div>
         </div>
       </section>
+
     </div>
   );
 }

@@ -113,7 +113,7 @@ const Header = () => {
         </AnimatePresence>
       </div>
     </div>
-    <div className="w-full bg-gray-50/40 px-6 md:px-6 mx-1 mt-1 pt-3 flex flex-col gap-2 items-center">
+    <div className="w-full bg-gray-50/40 px-6 md:px-6 mx-1 mt-1 py-3 flex flex-col gap-2 items-center">
   <div className="relative flex items-center justify-between w-full">
     {/* Left: Menu Button */}
     <button
